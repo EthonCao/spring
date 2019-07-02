@@ -1,2 +1,3 @@
-# spring-boot
-Some spring boot project
+# spring
+
+This repository used for personal study on spring, spring boot, spring data, spring cloud and so on
