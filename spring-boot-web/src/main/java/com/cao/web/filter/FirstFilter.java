@@ -18,13 +18,13 @@ import javax.servlet.annotation.WebFilter;
  *</filter>
  *<filter-mapping>
  *	<filter-name>FirstFilter</filter-name>
- *	<url-pattern>/first</url-pattern>
+ *	<url-pattern>/first</url-pattern>    //url-pattern配置需要 被拦截的serverlet
  *</filter-mapping>
  * @author Cao
  *
  */
 //@WebFilter(filterName="FirstFilter",urlPatterns={"*.do","*.jsp"})
-@WebFilter(filterName ="FirstFilter", urlPatterns ="/firstFilter")
+@WebFilter(filterName ="FirstFilter", urlPatterns ="/firstServlet")
 public class FirstFilter implements Filter{
 
 	@Override

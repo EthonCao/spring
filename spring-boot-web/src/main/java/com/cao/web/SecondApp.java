@@ -41,7 +41,7 @@ public class SecondApp {
 	@Bean
 	public FilterRegistrationBean getFilterRegistrationBean() {
 		FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean(new SecondFilter());
-		filterRegistrationBean.addUrlPatterns("/secondFilter");
+		filterRegistrationBean.addUrlPatterns("/secondServlet");
 		return filterRegistrationBean;
 	}
 	
