@@ -3,10 +3,12 @@ package com.cao.web;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
 import com.cao.web.filter.SecondFilter;
+import com.cao.web.listener.SecondListener;
 import com.cao.web.servlet.SecondServlet;
 
 /**
@@ -22,7 +24,7 @@ public class SecondApp {
 	}
 	
 	/**
-	 * 获取servlet
+	 * 注册servlet
 	 * @return
 	 */
 	@Bean
@@ -33,7 +35,7 @@ public class SecondApp {
 	}
 	
 	/**
-	 * 获取filter
+	 * 注册filter
 	 * @return
 	 */
 	@Bean
@@ -41,6 +43,16 @@ public class SecondApp {
 		FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean(new SecondFilter());
 		filterRegistrationBean.addUrlPatterns("/secondFilter");
 		return filterRegistrationBean;
+	}
+	
+	/**
+	 * 注册listener
+	 * @return
+	 */
+	@Bean
+	public ServletListenerRegistrationBean<SecondListener> geServletListenerRegistrationBean() {
+		ServletListenerRegistrationBean<SecondListener> bean = new ServletListenerRegistrationBean<SecondListener>(new SecondListener());
+		return bean;
 	}
 	
 }
