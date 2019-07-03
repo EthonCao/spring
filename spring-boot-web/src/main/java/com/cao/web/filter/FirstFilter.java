@@ -10,6 +10,20 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
+/**
+ *SpringBoot整合Filter 方式一
+ *<filter>
+ *	<filter-name>FirstFilter</filter-name>
+ *	<filter-class>com.bjsxt.filter.FirstFilter</filter-class>
+ *</filter>
+ *<filter-mapping>
+ *	<filter-name>FirstFilter</filter-name>
+ *	<url-pattern>/first</url-pattern>
+ *</filter-mapping>
+ * @author Cao
+ *
+ */
+//@WebFilter(filterName="FirstFilter",urlPatterns={"*.do","*.jsp"})
 @WebFilter(filterName ="FirstFilter", urlPatterns ="/firstFilter")
 public class FirstFilter implements Filter{
 

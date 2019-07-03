@@ -9,6 +9,11 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
+/**
+ * SpringBoot整合Filter 方式二
+ * @author Cao
+ *
+ */
 public class SecondFilter implements Filter{
 
 	@Override

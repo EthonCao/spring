@@ -7,6 +7,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * SpringBoot整合Servlet方式二
+ * @author Cao
+ *
+ */
 public class SecondServlet extends HttpServlet{
 
 	/**

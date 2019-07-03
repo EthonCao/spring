@@ -8,6 +8,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ *SpringBoot整合Servlet方式一
+ *
+ *<servlet>
+ *	<servlet-name>FirstServlet</servlet-name>
+ *	<servlet-class>com.bjsxt.servlet.FirstServlet</servlet-class>
+ *</servlet>
+ *
+ *<servlet-mapping>
+ * <servlet-name>FirstServlet</servlet-name>
+ * <url-pattern>/first</url-pattern>
+ *</servlet-mapping>
+ *
+ * @author Cao
+ *
+ */
 @WebServlet(name ="FirstServlet", urlPatterns="/firstServlet")
 public class FirstServlet extends HttpServlet{
 
