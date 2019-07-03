@@ -32,4 +32,15 @@ public class SecondApp {
 		return servletRegistrationBean;
 	}
 	
+	/**
+	 * 获取filter
+	 * @return
+	 */
+	@Bean
+	public FilterRegistrationBean getFilterRegistrationBean() {
+		FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean(new SecondFilter());
+		filterRegistrationBean.addUrlPatterns("/secondFilter");
+		return filterRegistrationBean;
+	}
+	
 }
