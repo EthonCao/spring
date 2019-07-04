@@ -1,0 +1,2 @@
+Spring boot工程中对于模板形式的视图层技术要求必须放在src/main/resources
+resources目录下必须有一个名称为templates的子目录
