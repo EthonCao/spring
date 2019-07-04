@@ -12,21 +12,21 @@
 	</parent>
   
 	<properties>
-  		<java.version>1.8</java.version>
-  		<thymeleaf.version>3.0.2.RELEASE</thymeleaf.version>
-  		<thymeleaf-layout-dialect.version>2.0.4</thymeleaf-layout-dialect.version>
-	</properties>
+	  <java.version>1.8</java.version>
+	  <thymeleaf.version>3.0.2.RELEASE</thymeleaf.version>
+	  <thymeleaf-layout-dialect.version>2.0.4</thymeleaf-layout-dialect.version>
+	 </properties>
   
-	<dependencies>
-		<!-- spring boot启动器 -->
+  	<dependencies>
+  		<!-- springBoot的启动器 -->
     	<dependency>
         	<groupId>org.springframework.boot</groupId>
         	<artifactId>spring-boot-starter-web</artifactId>
     	</dependency>
-    	<!-- spring boot thymeleaf启动器 -->
-    	<dependency>
-        	<groupId>org.springframework.boot</groupId>
-        	<artifactId>spring-boot-starter-thymeleaf</artifactId>
-    	</dependency>
-	</dependencies>
+	    <!-- springBoot的启动器 -->
+	    <dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-thymeleaf</artifactId>
+	    </dependency>
+  </dependencies>
 </project>
