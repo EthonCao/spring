@@ -16,9 +16,22 @@
 	</properties>
   
 	<dependencies>
+		<!-- spring boot启动器 -->
     	<dependency>
         	<groupId>org.springframework.boot</groupId>
         	<artifactId>spring-boot-starter-web</artifactId>
     	</dependency>
+    	<!-- JSP -->
+    	<!-- jstl -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+		<!-- jasper tomcat解析jsp的引擎 -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 </project>
