@@ -1,4 +1,4 @@
-package cao.cao.web.jsp.domain;
+package cao.cao.web.domain;
 
 public class User {
 	private Integer userid;

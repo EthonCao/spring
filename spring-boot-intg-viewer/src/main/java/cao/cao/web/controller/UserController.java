@@ -1,4 +1,4 @@
-package cao.cao.web.jsp.controller;
+package cao.cao.web.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import cao.cao.web.jsp.domain.User;
+import cao.cao.web.domain.User;
 
 /**
  * spring boot integrate with jsp
