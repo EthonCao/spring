@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.cao.web.App;
+import com.cao.web.service.impl.UserServiceImpl;
 
 /**
 * SpringBoot测试类
@@ -23,10 +24,10 @@ import com.cao.web.App;
 public class UserServiceTest {
 
 	@Autowired
-	private UserServiceImpl userServiceImpl;
+	private UserService userService;
 	
 	@Test
 	public void testAddUser(){
-		this.userServiceImpl.addUser();
+		this.userService.addUser();
 	}
 }
